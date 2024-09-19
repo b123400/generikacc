@@ -23,16 +23,16 @@ DEPENDENCIES:
   - OCMock (~> 3.4.1)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AFNetworking
     - NTMonthYearPicker
     - OCMock
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AFNetworking: cb604b1c2bded0871f5f61f5d53653739e841d6b
   NTMonthYearPicker: 27e1739d6e29428628c8275a7c1a9e4835c352f4
   OCMock: 2cd0716969bab32a2283ff3a46fd26a8c8b4c5e3
 
 PODFILE CHECKSUM: fa0ef27d4a223ed63718b123e4ccf39788cfb3c9
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.15.2

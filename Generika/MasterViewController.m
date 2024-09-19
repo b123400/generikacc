@@ -573,7 +573,9 @@ static const int kSegmentReceipt = 1;
         NSString *url;
         url = [NSString stringWithFormat:
           @"%@/%@/gcc/home_interactions/%@", kOddbBaseURL, lang, productEANs];
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+          [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]
+                                             options:@{}
+                                   completionHandler:nil];
       }
     }
   }
@@ -602,6 +604,7 @@ static const int kSegmentReceipt = 1;
   self.settings.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
   UINavigationController *settingsNavigation = [[UINavigationController alloc]
     initWithRootViewController:self.settings];
+    settingsNavigation.view.backgroundColor = [UIColor systemGroupedBackgroundColor];
   [self presentViewController:settingsNavigation animated:YES completion:nil];
 }
 

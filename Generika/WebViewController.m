@@ -184,7 +184,9 @@
 - (void)actionSheet:(UIActionSheet *)sheet clickedButtonAtIndex:(NSInteger)index
 {
   if (index == sheet.destructiveButtonIndex) {
-    [[UIApplication sharedApplication] openURL:[self.browserView.request URL]];
+      [[UIApplication sharedApplication] openURL:[self.browserView.request URL]
+                                         options:@{}
+                               completionHandler:nil];
   } else if (index == 1) { //back to list
     MasterViewController *parent = [self.navigationController.viewControllers objectAtIndex:0];
     [self.navigationController popToViewController:(UIViewController *)parent animated:YES];
